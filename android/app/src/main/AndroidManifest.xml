@@ -1,13 +1,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
   <uses-permission android:name="android.permission.INTERNET" />
-  <!-- Permissions for image picker (for Android 12 and below) -->
-  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+
+  <uses-permission
+    android:name="android.permission.READ_EXTERNAL_STORAGE"
+    android:maxSdkVersion="32" />
   <uses-permission android:name="android.permission.CAMERA" />
 
   <application
     android:name=".MainApplication"
     android:label="@string/app_name"
-      android:icon="@mipmap/ic_launcher"
+    android:icon="@mipmap/ic_launcher"
     android:allowBackup="false"
     android:theme="@style/AppTheme"
     android:usesCleartextTraffic="${usesCleartextTraffic}"
