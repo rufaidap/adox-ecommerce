@@ -10,7 +10,7 @@
 		0BD465330F0546D5A47B8E84 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A391643C2A6D4743858B382E /* Inter-SemiBold.ttf */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2170D844556931C91A6B16F4 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
-		6541FA5BB608BC6081F4B766 /* Pods_Gateco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25808189180B1C3FE598FC48 /* Pods_Gateco.framework */; };
+		6541FA5BB608BC6081F4B766 /* Pods_AdoxEcommerce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25808189180B1C3FE598FC48 /* Pods_AdoxEcommerce.framework */; };
 		683D065CFFD84B318BF86D6F /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0C2EC2322544755BF66EE8E /* Inter-Regular.ttf */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
@@ -22,24 +22,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		045996C6D6F34972831B7473 /* BootSplash.storyboard */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = BootSplash.storyboard; path = Gateco/BootSplash.storyboard; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* Gateco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gateco.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Gateco/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Gateco/Info.plist; sourceTree = "<group>"; };
-		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = Gateco/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		25808189180B1C3FE598FC48 /* Pods_Gateco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gateco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		045996C6D6F34972831B7473 /* BootSplash.storyboard */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = BootSplash.storyboard; path = AdoxEcommerce/BootSplash.storyboard; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* AdoxEcommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdoxEcommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = AdoxEcommerce/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = AdoxEcommerce/Info.plist; sourceTree = "<group>"; };
+		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = AdoxEcommerce/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		25808189180B1C3FE598FC48 /* Pods_AdoxEcommerce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdoxEcommerce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		398693F3598F48B9AC1DD61E /* Inter-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Bold.ttf"; path = "../src/assets/fonts/Inter-Bold.ttf"; sourceTree = "<group>"; };
-		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Gateco/AppDelegate.swift; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Gateco/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8F630D5967DCB01007818C73 /* Pods-Gateco.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gateco.debug.xcconfig"; path = "Target Support Files/Pods-Gateco/Pods-Gateco.debug.xcconfig"; sourceTree = "<group>"; };
+		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = AdoxEcommerce/AppDelegate.swift; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = AdoxEcommerce/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8F630D5967DCB01007818C73 /* Pods-AdoxEcommerce.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdoxEcommerce.debug.xcconfig"; path = "Target Support Files/Pods-AdoxEcommerce/Pods-AdoxEcommerce.debug.xcconfig"; sourceTree = "<group>"; };
 		947CF3D463274BF692FF89A4 /* Inter-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Medium.ttf"; path = "../src/assets/fonts/Inter-Medium.ttf"; sourceTree = "<group>"; };
-		9D50CD5D2E8668A000862149 /* Gateco.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Gateco.entitlements; path = Gateco/Gateco.entitlements; sourceTree = "<group>"; };
+		9D50CD5D2E8668A000862149 /* AdoxEcommerce.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = AdoxEcommerce.entitlements; path = AdoxEcommerce/AdoxEcommerce.entitlements; sourceTree = "<group>"; };
 		A391643C2A6D4743858B382E /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-SemiBold.ttf"; path = "../src/assets/fonts/Inter-SemiBold.ttf"; sourceTree = "<group>"; };
-		ADCA159AFEC1093797B55A31 /* Pods-Gateco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gateco.release.xcconfig"; path = "Target Support Files/Pods-Gateco/Pods-Gateco.release.xcconfig"; sourceTree = "<group>"; };
+		ADCA159AFEC1093797B55A31 /* Pods-AdoxEcommerce.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdoxEcommerce.release.xcconfig"; path = "Target Support Files/Pods-AdoxEcommerce/Pods-AdoxEcommerce.release.xcconfig"; sourceTree = "<group>"; };
 		B3E8E24E2EE1929A00E7D8C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D0C2EC2322544755BF66EE8E /* Inter-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Regular.ttf"; path = "../src/assets/fonts/Inter-Regular.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F95EFB5CCF1343A48C41075F /* Colors.xcassets */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = Gateco/Colors.xcassets; sourceTree = "<group>"; };
+		F95EFB5CCF1343A48C41075F /* Colors.xcassets */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = AdoxEcommerce/Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,17 +47,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6541FA5BB608BC6081F4B766 /* Pods_Gateco.framework in Frameworks */,
+				6541FA5BB608BC6081F4B766 /* Pods_AdoxEcommerce.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		13B07FAE1A68108700A75B9A /* Gateco */ = {
+		13B07FAE1A68108700A75B9A /* AdoxEcommerce */ = {
 			isa = PBXGroup;
 			children = (
-				9D50CD5D2E8668A000862149 /* Gateco.entitlements */,
+				9D50CD5D2E8668A000862149 /* AdoxEcommerce.entitlements */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				761780EC2CA45674006654EE /* AppDelegate.swift */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
@@ -66,14 +66,14 @@
 				045996C6D6F34972831B7473 /* BootSplash.storyboard */,
 				F95EFB5CCF1343A48C41075F /* Colors.xcassets */,
 			);
-			name = Gateco;
+			name = AdoxEcommerce;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				25808189180B1C3FE598FC48 /* Pods_Gateco.framework */,
+				25808189180B1C3FE598FC48 /* Pods_AdoxEcommerce.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -89,7 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				B3E8E24E2EE1929A00E7D8C5 /* GoogleService-Info.plist */,
-				13B07FAE1A68108700A75B9A /* Gateco */,
+				13B07FAE1A68108700A75B9A /* AdoxEcommerce */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
@@ -104,7 +104,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* Gateco.app */,
+				13B07F961A680F5B00A75B9A /* AdoxEcommerce.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,8 +112,8 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8F630D5967DCB01007818C73 /* Pods-Gateco.debug.xcconfig */,
-				ADCA159AFEC1093797B55A31 /* Pods-Gateco.release.xcconfig */,
+				8F630D5967DCB01007818C73 /* Pods-AdoxEcommerce.debug.xcconfig */,
+				ADCA159AFEC1093797B55A31 /* Pods-AdoxEcommerce.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -132,9 +132,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		13B07F861A680F5B00A75B9A /* Gateco */ = {
+		13B07F861A680F5B00A75B9A /* AdoxEcommerce */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Gateco" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "AdoxEcommerce" */;
 			buildPhases = (
 				4DF6F092531C2BD6E5299D71 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
@@ -149,9 +149,9 @@
 			);
 			dependencies = (
 			);
-			name = Gateco;
-			productName = Gateco;
-			productReference = 13B07F961A680F5B00A75B9A /* Gateco.app */;
+			name = AdoxEcommerce;
+			productName = AdoxEcommerce;
+			productReference = 13B07F961A680F5B00A75B9A /* AdoxEcommerce.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -167,7 +167,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Gateco" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "AdoxEcommerce" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -180,7 +180,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* Gateco */,
+				13B07F861A680F5B00A75B9A /* AdoxEcommerce */,
 			);
 		};
 /* End PBXProject section */
@@ -228,15 +228,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Gateco/Pods-Gateco-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-AdoxEcommerce/Pods-AdoxEcommerce-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Gateco/Pods-Gateco-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-AdoxEcommerce/Pods-AdoxEcommerce-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gateco/Pods-Gateco-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdoxEcommerce/Pods-AdoxEcommerce-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4B83B8C84DCA4F662F95C4A6 /* [CP] Embed Pods Frameworks */ = {
@@ -245,15 +245,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Gateco/Pods-Gateco-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-AdoxEcommerce/Pods-AdoxEcommerce-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Gateco/Pods-Gateco-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-AdoxEcommerce/Pods-AdoxEcommerce-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gateco/Pods-Gateco-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdoxEcommerce/Pods-AdoxEcommerce-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4DF6F092531C2BD6E5299D71 /* [CP] Check Pods Manifest.lock */ = {
@@ -271,7 +271,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Gateco-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-AdoxEcommerce-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -307,18 +307,18 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F630D5967DCB01007818C73 /* Pods-Gateco.debug.xcconfig */;
+			baseConfigurationReference = 8F630D5967DCB01007818C73 /* Pods-AdoxEcommerce.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Gateco/Gateco.entitlements;
+				CODE_SIGN_ENTITLEMENTS = AdoxEcommerce/AdoxEcommerce.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RG4F7A3395;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = Gateco/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Gateco;
+				INFOPLIST_FILE = AdoxEcommerce/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AdoxEcommerce;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +332,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.adox.ecommerce;
-				PRODUCT_NAME = Gateco;
+				PRODUCT_NAME = AdoxEcommerce;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -347,17 +347,17 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ADCA159AFEC1093797B55A31 /* Pods-Gateco.release.xcconfig */;
+			baseConfigurationReference = ADCA159AFEC1093797B55A31 /* Pods-AdoxEcommerce.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Gateco/Gateco.entitlements;
+				CODE_SIGN_ENTITLEMENTS = AdoxEcommerce/AdoxEcommerce.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RG4F7A3395;
-				INFOPLIST_FILE = Gateco/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Gateco;
+				INFOPLIST_FILE = AdoxEcommerce/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AdoxEcommerce;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -371,7 +371,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.adox.ecommerce;
-				PRODUCT_NAME = Gateco;
+				PRODUCT_NAME = AdoxEcommerce;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -564,7 +564,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Gateco" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "AdoxEcommerce" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -573,7 +573,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Gateco" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "AdoxEcommerce" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

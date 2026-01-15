@@ -7,7 +7,7 @@ import {logger} from '@/utils/helper';
 // Fallback URL if environment variable is not set
 const SUBSCRIPTION_URL = process.env.GRAPHQL_SUBSCRIPTION_URL
   ? `${process.env.GRAPHQL_SUBSCRIPTION_URL}/graphql`
-  : 'wss://api.gateco.com/graphql';
+  : 'wss://api.adoxecommerce.com/graphql';
 
 /**
  * WebSocket client configuration with automatic reconnection
