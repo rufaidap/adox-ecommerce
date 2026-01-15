@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "148945628404",
+    "project_id": "gateco-a8e66",
+    "storage_bucket": "gateco-a8e66.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148945628404:android:4a24b609830595f06282a1",
+        "android_client_info": {
+          "package_name": "com.adox.gateco.customer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArC_I84tDeIUk0Vhq7F7ER7nJIg1eeYeY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
