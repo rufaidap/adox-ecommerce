@@ -8,7 +8,7 @@ import {
 
 import {ImageComp} from '@/components';
 import {useTheme} from '@/context/ThemeContext';
-import {Category, Home, Orders, Profile, WhatsApp} from '@/screens';
+import {Home} from '@/screens';
 import {Colors} from '@/styles/colors';
 import fontFamily from '@/styles/fontFamily';
 import {rf} from '@/styles/scaling';
@@ -43,24 +43,6 @@ export const MainTabNavigator = () => {
       initialRouteName={'Home'}
       tabBar={props => <MyTabBar {...props} />}>
       <Tab.Screen
-        name="WhatsApp"
-        component={WhatsApp}
-        options={{
-          tabBarIcon: () => (
-            <ImageComp
-              // eslint-disable-next-line @typescript-eslint/no-require-imports
-              source={require('@/assets/images/bottom-tab/whatsapp.png')}
-              style={{
-                height: TAB_HEIGHT * 0.7,
-                width: TAB_HEIGHT * 0.7,
-              }}
-              resizeMode="contain"
-            />
-          ),
-          tabBarLabel: '',
-        }}
-      />
-      <Tab.Screen
         name="Home"
         component={Home}
         options={{
@@ -71,57 +53,6 @@ export const MainTabNavigator = () => {
               style={{
                 aspectRatio: 442 / 488,
                 height: ICON_SIZE,
-              }}
-              resizeMode="contain"
-            />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="Category"
-        component={Category}
-        options={{
-          tabBarIcon: () => (
-            <ImageComp
-              // eslint-disable-next-line @typescript-eslint/no-require-imports
-              source={require('@/assets/images/bottom-tab/category.png')}
-              style={{
-                height: ICON_SIZE,
-                width: ICON_SIZE,
-              }}
-              resizeMode="contain"
-            />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="Orders"
-        component={Orders}
-        options={{
-          tabBarIcon: () => (
-            <ImageComp
-              // eslint-disable-next-line @typescript-eslint/no-require-imports
-              source={require('@/assets/images/bottom-tab/orders.png')}
-              style={{
-                height: ICON_SIZE,
-                width: ICON_SIZE,
-              }}
-              resizeMode="contain"
-            />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="Profile"
-        component={Profile}
-        options={{
-          tabBarIcon: () => (
-            <ImageComp
-              // eslint-disable-next-line @typescript-eslint/no-require-imports
-              source={require('@/assets/images/bottom-tab/profile.png')}
-              style={{
-                height: ICON_SIZE,
-                width: ICON_SIZE,
               }}
               resizeMode="contain"
             />

@@ -15,84 +15,15 @@ export type AuthStackParamList = {
   Login: {
     errorMessage?: string;
   };
-  Signup: {
-    phoneNumber?: string;
-    firebaseId?: string;
-  };
   Onboarding: undefined;
-  PhoneLogin: {
-    errorMessage?: string;
-  };
-  OTPVerification: {
-    phoneNumber: string;
-    confirmation?: FirebaseAuthTypes.ConfirmationResult;
-  };
 };
 
 export type MainTabParamList = {
-  WhatsApp: undefined;
   Home: undefined;
-  Orders: undefined;
-  Category: undefined;
-  Profile: undefined;
 };
 
 export type MainStackParamList = {
   MainTabs: undefined;
-  Cart: undefined;
-  Checkout: undefined;
-  PaymentDetails: undefined;
-  PaymentSuccessful: {
-    amount: number;
-    date: string;
-    time: string;
-    paymentId: string;
-    paymentMethod: string;
-  };
-  MyAddress:
-    | {
-        selectMode?: boolean;
-      }
-    | undefined;
-  AddAddress:
-    | {
-        addressId?: string;
-        addressData?: {
-          id: string;
-          contact_name: string | null;
-          contact_phone: string | null;
-          address_line1: string | null;
-          address_line2: string | null;
-          city: string | null;
-          postal_code: string | null;
-          state: string | null;
-          country: string | null;
-          landmark: string | null;
-          label: string | null;
-          delivery_instructions: string | null;
-          is_default: boolean | null;
-        };
-      }
-    | undefined;
-  Orders: undefined;
-  OrderDetails: {
-    orderId?: string;
-    orderNo?: string;
-  };
-  ProfileUpdate: undefined;
-  ChangePassword: undefined;
-  ProductListing: {
-    label?: string;
-    categoryId?: string;
-    brandId?: string;
-    search?: string;
-    filter?: ProductFilter;
-  };
-  Search:
-    | {
-        type?: 'products' | 'categories';
-      }
-    | undefined;
 };
 
 /**
