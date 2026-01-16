@@ -5,7 +5,7 @@ import {useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {observer} from 'mobx-react-lite';
 
-import InitialPageArt from '@/assets/images/initalPage.svg';
+import InitialPageArt from '@/assets/images/initialPage.svg';
 import ButtonComp from '@/components/ButtonComp';
 import TextComp from '@/components/TextComp';
 import WrapperContainer from '@/components/WrapperContainer';
@@ -41,11 +41,11 @@ const OnBoard: React.FC = () => {
   };
 
   const handleGetStarted = () => {
-    navigation.navigate({name: 'PhoneLogin', params: {}});
+    navigation.navigate('Login', {});
   };
 
   const handleLogin = () => {
-    navigation.navigate({name: 'PhoneLogin', params: {}});
+    navigation.navigate('Login', {});
   };
 
   return (

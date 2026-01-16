@@ -11,8 +11,7 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 
 import TextComp from '@/components/TextComp';
 import {useTheme} from '@/context/ThemeContext';
-import useIsRTL from '@/hooks/useIsRTL';
-// import cartStore from '@/stores/cartStore';
+import useIsRTL from '@/hooks/useIsRTL'; 
 import {Colors, ThemeType, createShadowStyle} from '@/styles/colors';
 import fontFamily from '@/styles/fontFamily';
 import {ms, rf, s} from '@/styles/scaling';
@@ -32,8 +31,7 @@ const MyTabBar = observer(
     const isRTL = useIsRTL();
     const {theme} = useTheme();
     const styles = useRTLStyles(isRTL, theme);
-    const colors = Colors[theme];
-    // const cartItemsCount = cartStore.itemsCount;
+    const colors = Colors[theme]; 
 
     // Separate WhatsApp route from other routes
     const whatsAppRoute = state?.routes.find(

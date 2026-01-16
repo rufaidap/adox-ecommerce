@@ -9,8 +9,7 @@ import Logo from '@/assets/images/logo/logo.png';
 import WrapperContainer from '@/components/WrapperContainer';
 import {useTheme} from '@/context/ThemeContext';
 import {RootStackParamList} from '@/navigation/types';
-import authStore from '@/stores/authStore';
-import cartStore from '@/stores/cartStore';
+import authStore from '@/stores/authStore'; 
 import {Colors} from '@/styles/colors';
 import {secureStorage} from '@/utils/secureStorage';
 
@@ -82,8 +81,7 @@ const Intro: React.FC<IntroProps> = ({navigation}) => {
 
       // Load user details, cart items, and shipping address
       await authStore.loadUserDetails();
-      await cartStore.loadCartItems();
-      await cartStore.loadShippingAddress();
+      
 
       navigateToScreen('Main');
     } catch (error) {

@@ -7,4 +7,4 @@ export const HIT_SLOP: {
 
 export const CURRENCY_SYMBOL = '₹';
 
-export {handleAddToCart} from './cartUtils';
+ 

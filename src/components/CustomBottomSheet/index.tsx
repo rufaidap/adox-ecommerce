@@ -15,7 +15,7 @@ import {
 } from '@gorhom/bottom-sheet';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
-import CloseIcon from '@/assets/images/close.svg';
+//import CloseIcon from '@/assets/images/close.svg';
 import TextComp from '@/components/TextComp';
 import {useTheme} from '@/context/ThemeContext';
 import useIsRTL from '@/hooks/useIsRTL';
@@ -85,11 +85,11 @@ const CustomBottomSheet = forwardRef<
             <TouchableOpacity
               onPress={() => bottomSheetRef.current?.close()}
               style={styles.closeButton}>
-              <CloseIcon
+              {/* <CloseIcon
                 width={ms(14.25)}
                 height={ms(14.25)}
                 fill={colors.text}
-              />
+              /> */}
             </TouchableOpacity>
           ) : null}
           <TextComp

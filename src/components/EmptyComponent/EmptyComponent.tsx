@@ -1,8 +1,8 @@
 import React from 'react';
 import {ActivityIndicator, StyleSheet, View} from 'react-native';
 
-import BoxImage from '@/assets/images/box.png';
-import {ImageComp, TextComp} from '@/components';
+//import BoxImage from '@/assets/images/box.png';
+import { TextComp} from '@/components';
 import {commonColors} from '@/styles/colors';
 import {ms, vs} from '@/styles/scaling';
 
@@ -23,12 +23,12 @@ const EmptyComponent = ({
         <ActivityIndicator size={'large'} color={commonColors.primary} />
       ) : (
         <>
-          {showIcon && (
+          {/* {showIcon && (
             <ImageComp
               source={BoxImage}
               style={{height: vs(240), width: vs(240)}}
             />
-          )}
+          )} */}
           <TextComp text={emptyText} style={styles.emptyStateText} />
         </>
       )}
