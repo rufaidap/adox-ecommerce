@@ -11,8 +11,7 @@ import {t} from 'i18next';
 
 import {uploadSingleFile} from '@/utils/uploadSingleFile';
 import TextComp from '@/components/TextComp';
-import {PlusIcon} from '@/assets/icons'; // Ensure this exists or use MaterialIcons
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import {PlusIcon} from '@/assets/icons';
 import {commonColors} from '@/styles/colors';
 import {moderateScale} from '@/styles/scaling';
 import {ImageComp} from '@/components';
@@ -103,7 +102,7 @@ const DocumentUpload: React.FC<DocumentUploadProps> = ({
             <ImageComp source={{uri: fileUri}} style={{width: '100%', height: '100%', borderRadius: moderateScale(8)}} resizeMode="cover" />
         ) : (
           <View style={{alignItems: 'center'}}>
-             <MaterialIcons name="cloud-upload" size={30} color={commonColors.primary} />
+             <PlusIcon width={30} height={30} fill={commonColors.primary} />
             <TextComp text={uploading ? "UPLOADING" : "BROWSE_FILES"} style={{marginTop: 8, color: commonColors.primary}} />
           </View>
         )}
