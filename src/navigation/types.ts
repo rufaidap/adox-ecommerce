@@ -15,6 +15,7 @@ export type AuthStackParamList = {
   Login: {
     errorMessage?: string;
   };
+  Signup: undefined;
   Onboarding: undefined;
 };
 

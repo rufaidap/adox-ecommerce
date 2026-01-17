@@ -17,7 +17,7 @@ import {
 import {t} from 'i18next';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
-import {DownArrowIcon, CheckmarkCircleIcon} from '@/assets/icons';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import {useTheme} from '@/context/ThemeContext';
 import useIsRTL from '@/hooks/useIsRTL';
 import {commonColors, ThemeType} from '@/styles/colors';
@@ -151,11 +151,10 @@ const BottomSheetDD: FC<BottomSheetDDProps> = ({
           />
 
           {isSelected && (
-            <CheckmarkCircleIcon
-              width={moderateScale(20)}
-              height={moderateScale(20)}
-              fill={commonColors.primary}
-              style={{transform: [{scale: 1.2}]}}
+            <MaterialIcons
+              name="check-circle"
+              size={moderateScale(20)}
+              color={commonColors.primary}
             />
           )}
         </TouchableOpacity>
@@ -243,7 +242,13 @@ const BottomSheetDD: FC<BottomSheetDDProps> = ({
           {loading ? (
             <ActivityIndicator color={commonColors.secondary} />
           ) : (
-            downArrow && <DownArrowIcon />
+            downArrow && (
+              <MaterialIcons
+                name="keyboard-arrow-down"
+                size={moderateScale(24)}
+                color={commonColors.text}
+              />
+            )
           )}
         </TouchableOpacity>
         {rightAccessory}

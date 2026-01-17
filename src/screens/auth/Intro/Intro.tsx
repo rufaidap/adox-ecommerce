@@ -45,6 +45,10 @@ const Intro: React.FC<IntroProps> = ({navigation}) => {
 
   const getLatestData = async () => {
     try {
+      // Clear data for testing purposes as requested
+      // await authStore.clearDataAction();
+      // console.log('Auth data cleared');
+
       const user = await secureStorage.getItem('USER_DATA');
       const accessToken = await secureStorage.getItem('AUTH_TOKEN');
 

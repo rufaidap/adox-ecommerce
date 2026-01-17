@@ -7,10 +7,7 @@ import {
   useNavigation,
 } from '@react-navigation/native';
 
-import {
-  ArrowBackIosRoundedIcon,
-  ArrowForwardIosRoundedIcon,
-} from '@/assets/icons';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import TextComp from '@/components/TextComp';
 import {useTheme} from '@/context/ThemeContext';
 import useIsRTL from '@/hooks/useIsRTL';
@@ -90,16 +87,16 @@ const HeaderComp = ({
             hitSlop={HIT_SLOP}
             style={styles.backIcon}>
             {isRTL ? (
-              <ArrowForwardIosRoundedIcon
-                width={ms(20)}
-                height={ms(20)}
-                fill={Colors[theme].text}
+              <MaterialIcons
+                name="arrow-forward-ios"
+                size={ms(20)}
+                color={Colors[theme].text}
               />
             ) : (
-              <ArrowBackIosRoundedIcon
-                width={ms(20)}
-                height={ms(20)}
-                fill={Colors[theme].text}
+              <MaterialIcons
+                name="arrow-back-ios"
+                size={ms(20)}
+                color={Colors[theme].text}
               />
             )}
           </TouchableOpacity>
