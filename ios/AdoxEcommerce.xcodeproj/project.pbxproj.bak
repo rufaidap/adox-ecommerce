@@ -17,9 +17,10 @@
 		9870C6168EF949F5A21230A6 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045996C6D6F34972831B7473 /* BootSplash.storyboard */; };
 		B3E8E24F2EE1929B00E7D8C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3E8E24E2EE1929A00E7D8C5 /* GoogleService-Info.plist */; };
 		B7637A00351D4BDC9C5CC6EA /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F95EFB5CCF1343A48C41075F /* Colors.xcassets */; };
-		CBC829BC5C7D4691ADBB201F /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 40E7DD37BBFA47D1A08D8A39 /* index.js */; };
 		E6D65C171C3C4C24B4E20B2B /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 398693F3598F48B9AC1DD61E /* Inter-Bold.ttf */; };
 		FD8C77F1539F439DAED244DE /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 947CF3D463274BF692FF89A4 /* Inter-Medium.ttf */; };
+		4D705FB8860A4DE0A19DEBA4 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67F475750DF44919A2892EE3 /* MaterialIcons.ttf */; };
+		CBC829BC5C7D4691ADBB201F /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 40E7DD37BBFA47D1A08D8A39 /* index.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +31,6 @@
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = AdoxEcommerce/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		25808189180B1C3FE598FC48 /* Pods_AdoxEcommerce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdoxEcommerce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		398693F3598F48B9AC1DD61E /* Inter-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Bold.ttf"; path = "../src/assets/fonts/Inter-Bold.ttf"; sourceTree = "<group>"; };
-		40E7DD37BBFA47D1A08D8A39 /* index.js */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = index.js; path = ../src/assets/fonts/index.js; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = AdoxEcommerce/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = AdoxEcommerce/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F630D5967DCB01007818C73 /* Pods-AdoxEcommerce.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdoxEcommerce.debug.xcconfig"; path = "Target Support Files/Pods-AdoxEcommerce/Pods-AdoxEcommerce.debug.xcconfig"; sourceTree = "<group>"; };
@@ -42,6 +42,8 @@
 		D0C2EC2322544755BF66EE8E /* Inter-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Regular.ttf"; path = "../src/assets/fonts/Inter-Regular.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F95EFB5CCF1343A48C41075F /* Colors.xcassets */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = AdoxEcommerce/Colors.xcassets; sourceTree = "<group>"; };
+		67F475750DF44919A2892EE3 /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../src/assets/fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		40E7DD37BBFA47D1A08D8A39 /* index.js */ = {isa = PBXFileReference; name = "index.js"; path = "../src/assets/fonts/index.js"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				947CF3D463274BF692FF89A4 /* Inter-Medium.ttf */,
 				D0C2EC2322544755BF66EE8E /* Inter-Regular.ttf */,
 				A391643C2A6D4743858B382E /* Inter-SemiBold.ttf */,
+				67F475750DF44919A2892EE3 /* MaterialIcons.ttf */,
 				40E7DD37BBFA47D1A08D8A39 /* index.js */,
 			);
 			name = Resources;
@@ -203,6 +206,7 @@
 				B3E8E24F2EE1929B00E7D8C5 /* GoogleService-Info.plist in Resources */,
 				9870C6168EF949F5A21230A6 /* BootSplash.storyboard in Resources */,
 				B7637A00351D4BDC9C5CC6EA /* Colors.xcassets in Resources */,
+				4D705FB8860A4DE0A19DEBA4 /* MaterialIcons.ttf in Resources */,
 				CBC829BC5C7D4691ADBB201F /* index.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
