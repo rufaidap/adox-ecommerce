@@ -2,14 +2,14 @@
 import React, {useState, useEffect} from 'react';
 import {View, Alert, TouchableOpacity} from 'react-native';
 
-import {useMutation} from '@apollo/client';
+
 import {useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {t} from 'i18next';
 import {observer} from 'mobx-react-lite';
 import {showMessage} from 'react-native-flash-message';
 
-import {LOGIN_CUSTOMER} from '@/api/graphql/auth/mutations';
+import {loginCustomer} from '@/api/rest/auth';
 import ButtonComp from '@/components/ButtonComp';
 import TextComp from '@/components/TextComp';
 import TextInputComp from '@/components/TextInputComp';
@@ -22,10 +22,7 @@ import {vs} from '@/styles/scaling';
 import {HIT_SLOP} from '@/utils';
 import {logger} from '@/utils/helper';
 import * as RootNavigation from '@/utils/RootNavigation';
-import {
-  validateGraphQlError,
-  type CustomError,
-} from '@/utils/validateGraphqlError';
+
 
 import useRTLStyles from './styles';
 
@@ -40,7 +37,7 @@ const Login = observer(() => {
   const navigation =
     useNavigation<NativeStackNavigationProp<AuthStackParamList>>();
 
-  const [loginCustomer, {loading: isSubmitting}] = useMutation(LOGIN_CUSTOMER);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
     // Navigate to main if already authenticated
@@ -59,19 +56,18 @@ const Login = observer(() => {
       return;
     }
 
+    setIsSubmitting(true);
     authStore.setLoading(true);
     authStore.setError(null);
 
     try {
       const response = await loginCustomer({
-        variables: {
           email: email.trim(),
           password,
-        },
       });
 
-      if (response.data?.loginCustomer) {
-        const customer = response.data.loginCustomer;
+      if (response) {
+        const customer = response;
 
         // Save complete user data and token to authStore
         await authStore.setUserData(
@@ -107,10 +103,9 @@ const Login = observer(() => {
       } else {
         throw new Error('Login failed');
       }
-    } catch (error: unknown) {
-      const errorData = validateGraphQlError(error as CustomError);
+    } catch (error: any) {
       const errorMessage =
-        errorData?.message ||
+        error.response?.data?.message ||
         (error instanceof Error ? error.message : '') ||
         t('FAILED_TO_LOGIN');
 
@@ -118,6 +113,9 @@ const Login = observer(() => {
       authStore.setError(errorMessage);
 
       Alert.alert(t('LOGIN_FAILED'), errorMessage);
+    } finally {
+        setIsSubmitting(false);
+        authStore.setLoading(false);
     }
   };
 

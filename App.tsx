@@ -16,13 +16,13 @@ import '@/lang';
 import React, {useLayoutEffect} from 'react';
 import {I18nManager, StyleSheet} from 'react-native';
 
-import {ApolloProvider} from '@apollo/client';
+
 import {BottomSheetModalProvider} from '@gorhom/bottom-sheet';
 import BootSplash from 'react-native-bootsplash';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 
-import {generalApolloClient} from '@/api/graphql/apolloClient';
+
 import {ThemeProvider} from '@/context/ThemeContext';
 // import {requestUserPermission} from '@/helper/notifciationService';
 import Routes from '@/navigation/Routes';
@@ -71,7 +71,7 @@ const App = () => {
    * Note: MobX stores are singletons and don't require a Provider wrapper
    */
   return (
-    <ApolloProvider client={generalApolloClient}>
+
       <GestureHandlerRootView style={styles.container}>
         <SafeAreaProvider>
           <ThemeProvider>
@@ -81,7 +81,7 @@ const App = () => {
           </ThemeProvider>
         </SafeAreaProvider>
       </GestureHandlerRootView>
-    </ApolloProvider>
+
   );
 };
 

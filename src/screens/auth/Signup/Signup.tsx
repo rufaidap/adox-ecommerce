@@ -8,7 +8,7 @@ import {
   View,
 } from 'react-native';
 
-import {useMutation} from '@apollo/client';
+
 import auth from '@react-native-firebase/auth';
 import {useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
@@ -16,7 +16,7 @@ import {t} from 'i18next';
 import {observer} from 'mobx-react-lite';
 import {showMessage} from 'react-native-flash-message';
 
-import {REGISTER_CUSTOMER} from '@/api/graphql/auth/mutations';
+import {registerCustomer} from '@/api/rest/auth';
 import HeaderComp from '@/components/HeaderComp';
 import TextComp from '@/components/TextComp';
 import WrapperContainer from '@/components/WrapperContainer';
@@ -24,7 +24,7 @@ import {useTheme} from '@/context/ThemeContext';
 import useIsRTL from '@/hooks/useIsRTL';
 import {AuthStackParamList} from '@/navigation/types';
 import authStore from '@/stores/authStore';
-import {CustomError, validateGraphQlError} from '@/utils/validateGraphqlError';
+
 
 import useRTLStyles from './styles';
 import CustomerForm from './components/CustomerForm';
@@ -39,8 +39,7 @@ const Signup = observer(() => {
 
   const [activeTab, setActiveTab] = useState<'customer' | 'supplier'>('customer');
 
-  const [registerCustomer, {loading: isSubmittingForm}] =
-    useMutation(REGISTER_CUSTOMER);
+  const [isSubmittingForm, setIsSubmittingForm] = useState(false);
 
   const onSubmit = async (data: any) => {
     authStore.setLoading(true);
@@ -89,31 +88,29 @@ const Signup = observer(() => {
 
       console.log('Registering with payload:', payload);
 
-      const response = await registerCustomer({
-        variables: {
-            customer: payload
-        },
-      });
+      setIsSubmittingForm(true);
+      const response = await registerCustomer(payload);
 
-      if (response.data?.registerCustomer) {
+      if (response) {
         navigation.navigate('Login', {
           errorMessage: t('ACCOUNT_PENDING_ADMIN_APPROVAL'),
         });
       } else {
         throw new Error('Registration failed');
       }
-    } catch (error: unknown) {
-      const errorData = validateGraphQlError(error as CustomError);
+    } catch (error: any) {
+      console.error(error);
       
       const errorMessage =
-        errorData?.message ||
-        (error as {message?: string})?.message ||
+        error.response?.data?.message ||
+        error.message ||
         t('FAILED_TO_CREATE_ACCOUNT');
         
       authStore.setLoading(false);
       authStore.setError(errorMessage);
       Alert.alert(t('SIGNUP_FAILED'), errorMessage);
     } finally {
+        setIsSubmittingForm(false);
         authStore.setLoading(false);
     }
   };
