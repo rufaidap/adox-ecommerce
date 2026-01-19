@@ -1,4 +1,4 @@
-import {validateGraphQlError, CustomError} from './validateGraphqlError';
+import {showMessage} from 'react-native-flash-message';
 
 interface File {
   uploaded?: boolean;
@@ -51,8 +51,13 @@ export const uploadSingleFile = async (file: File): Promise<UploadResponse> => {
           uploaded: false,
         };
       }
-    } catch (error) {
-      validateGraphQlError(error as CustomError);
+    } catch (error: any) {
+      console.error('File upload error:', error);
+      showMessage({
+        type: 'danger',
+        message: 'Upload Failed',
+        description: error.message || 'Failed to upload file',
+      });
       return {
         file: file,
         uploaded: false,

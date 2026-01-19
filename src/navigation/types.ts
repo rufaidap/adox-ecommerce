@@ -3,7 +3,7 @@ import type {BottomTabNavigationProp} from '@react-navigation/bottom-tabs';
 import type {CompositeNavigationProp} from '@react-navigation/native';
 import type {NativeStackNavigationProp} from '@react-navigation/native-stack';
 
-import {ProductFilter} from '@/api/graphql/products/types';
+
 
 export type RootStackParamList = {
   Auth: undefined;
