@@ -2,7 +2,7 @@ import React from 'react';
 import {ScrollView, View} from 'react-native';
 import {useForm, Controller} from 'react-hook-form';
 import {valibotResolver} from '@hookform/resolvers/valibot';
-import {email, minLength, nonEmpty, object, pipe, string} from 'valibot';
+import {email, minLength, nonEmpty, object, optional, pipe, string} from 'valibot';
 import {t} from 'i18next';
 
 import TextInputComp from '@/components/TextInputComp';
@@ -29,6 +29,7 @@ const schema = object({
   vatNumber: string(),
   licenseNumber: string(),
   nationalAddressCode: string(),
+  token: optional(string()),
 });
 
 type FormData = {
@@ -47,6 +48,7 @@ type FormData = {
   vatNumber: string;
   licenseNumber: string;
   nationalAddressCode: string;
+  token?: string;
   // Files
   crFile?: string;
   licenseFile?: string;
@@ -280,6 +282,20 @@ const CustomerForm: React.FC<CustomerFormProps> = ({onSubmit, loading}) => {
         )}
       />
       <DocumentUpload label={t('CHOOSE_NATIONAL_ADDRESS_FILE')} onUpload={(url) => setValue('nationalAddressFile', url)} />
+
+       {/* Token */}
+       <Controller
+        control={control}
+        name="token"
+        render={({field: {onChange, value}}) => (
+          <TextInputComp
+            value={value}
+            onChangeText={onChange}
+            placeholder={t('TOKEN')}
+            containerStyle={{marginBottom: vs(10)}}
+          />
+        )}
+      />
 
 
       <ButtonComp

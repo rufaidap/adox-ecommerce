@@ -2,7 +2,7 @@ import React from 'react';
 import {View} from 'react-native';
 import {useForm, Controller} from 'react-hook-form';
 import {valibotResolver} from '@hookform/resolvers/valibot';
-import {email, nonEmpty, object, pipe, string} from 'valibot';
+import {email, nonEmpty, object, optional, pipe, string} from 'valibot';
 import {t} from 'i18next';
 
 import TextInputComp from '@/components/TextInputComp';
@@ -21,6 +21,7 @@ const schema = object({
   nationalUnifiedNumber: string(),
   country: string(),
   address: string(),
+  token: optional(string()),
 });
 
 type FormData = {
@@ -33,6 +34,7 @@ type FormData = {
   nationalUnifiedNumber: string;
   country: string;
   address: string;
+  token?: string;
 };
 
 interface SupplierFormProps {
@@ -173,6 +175,19 @@ const SupplierForm: React.FC<SupplierFormProps> = ({onSubmit, loading}) => {
             multiline
             containerStyle={{height: 100, marginBottom: vs(10)}}
             inputStyle={{height: 100, textAlignVertical: 'top'}}
+          />
+        )}
+      />
+
+       <Controller
+        control={control}
+        name="token"
+        render={({field: {onChange, value}}) => (
+          <TextInputComp
+            value={value}
+            onChangeText={onChange}
+            placeholder={t('TOKEN')}
+            containerStyle={{marginBottom: vs(10)}}
           />
         )}
       />
